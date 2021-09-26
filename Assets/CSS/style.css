@@ -1,1 +1,148 @@
-Stylesheet for 
+/* Stylesheet for pop_culture_quiz */
+
+/* universal settings */
+* {
+
+
+}
+
+/* Highscores button that will lead directly to Highscores screen, will be visible on start and game screens, will ge hidden on highscores screen*/
+.scoresbuttonarea {
+
+
+}
+
+.scoresbutton {
+
+
+}
+
+/* Welcome area with Pop culture quiz title and instruction message */
+.quizstart {
+
+
+}
+
+.quizstart h1 {
+
+
+}
+
+.quizstart p {
+
+
+}
+
+/* This area contains the name or initial text area as well as the submit/start button */
+.startfield {
+
+
+}
+
+#textareaname {
+
+
+}
+
+.startbutton {
+
+
+}
+
+/* this section contains the timer which will be hidden on start screen and visible on game screen */
+.timer {
+
+
+}
+
+/* this section contains the h1 and text areas for the questions themselves */
+.questionarea {
+
+
+}
+
+.questionarea h1 {
+
+
+}
+
+.questionarea p {
+
+
+}
+
+/* this section contains the 4 sepatate answer options for each question */
+.answerfield {
+
+
+}
+
+.answerfieldbutton1 {
+
+
+}
+
+.answerfieldbutton2 {
+
+
+}
+
+.answerfieldbutton3 {
+
+
+}
+
+.answerfieldbutton4 {
+
+
+}
+
+/* This section contains the styling for the highscores.html screen  */
+
+/* This section contains the styling for the highscores title specifically*/
+.quizend {
+
+
+}
+
+.quizend h1 {
+
+
+}
+
+/* this section contains the styling for the highscores list */
+.topscoresarea {
+
+
+}
+
+.scoreslist {
+
+
+}
+
+/* this section contains the styling for the footer area on the highscores list, contains thank you message and play again button */
+.thanks {
+
+
+}
+
+.thanks h2 {
+
+
+}
+
+.againbutton {
+
+    
+}
+
+
+
+
+
+
+
+
+
+
