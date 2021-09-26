@@ -1,24 +1,27 @@
 /* Stylesheet for pop_culture_quiz */
 
-/* universal settings */
-* {
-    background-color: var(--tenth);
-
-
-}
-
 /* primarily used colors */
 :root {
-    --first: #2e3941;
+    --first: #549dd0;
     --second: #986244;
     --third: #1d4f74;
     --fourth: #181612;
-    --fifth: #b88953;
+    --fifth: #e3b581;
     --sixth: #111b71;
     --seventh: #6b789a;
     --eigth: #5e0e02;
-    --ninth: #35180d;
-    --tenth: #66676a;
+    --ninth: #4b2313;
+    --tenth: #8a8d93;
+
+}
+
+/* universal settings */
+* {
+    background-color: var(--tenth);
+    color: var(--fourth);
+    font-family: "Calibri", "Cambria", "Consolas", "Tahoma", "Arial", sans-serif;
+    text-decoration: none;
+    
 
 }
 
@@ -27,52 +30,174 @@
 
 
 /* Highscores button that will lead directly to Highscores screen, will be visible on start and game screens, will ge hidden on highscores screen*/
+header {
+
+
+}
+
 .scoresbuttonarea {
+    float: left;
+    width: 300px;
+    height: 663px;
+    border: 3px solid black;
+
 
 
 }
 
 .scoresbutton {
+    width: 250px;
+    height: 80px;
+    margin: 20px auto;
+    padding: 29px 0px 0px 0px;
+    text-align: center;
+    font-size: 27px;
+    color: var(--fifth);
+    word-wrap: wrap;
+    background-color: var(--seventh);
+    box-shadow: 0px 0px 40px 5px var(--sixth);
+    box-shadow: inset 0px 0px 40px 5px var(--first);
 
+    border: 2px solid var(--third);
+    
+    justify-content: center;
 
+}
+
+.scoresbutton a {
+    background-color: transparent;
+    color: var(--fifth);
 }
 
 /* Welcome area with Pop culture quiz title and instruction message */
 .quizstart {
+    width: auto;
+    height: 500px;
+    float: center;
+    align-items: center;
+    justify-content: center;
 
+    border: 2px solid var(--third);
+    
 
 }
 
 .quizstart h1 {
+    margin: 0;
+    float: center;
+    font-size: 50px;
+    text-align: center;
+
+    border: 2px solid var(--third);
+    
 
 
 }
 
 .quizstart p {
+    margin: 0;
+    float: center;
+    font-size: 30px;
+    text-align: center;
 
+    border: 2px solid var(--third);
+    
+
+}
+
+.answerfieldhidden {
+    display: none;
+    margin: 0;
+    width: auto;
+    height: 250px;
+    background-color: green;
+    border: 2px solid var(--third);
+    
 
 }
 
 /* This area contains the name or initial text area as well as the submit/start button */
-.startfield {
+.disappearingareavisible {
+    height: 160px;
+    border: 1px solid var(--third);
+    
+}
 
+.startfield {
+    width: auto;
+    height: 160px;
+    justify-content: center;
+    align-items: center;
+
+
+    border: 1px solid var(--third);
+    
 
 }
 
 #textareaname {
+    background-color: var(--first);
+    color: var(--fourth);
+    margin: 15px 0px 0px 550px;
+    float: center;
+    width: 450px;
+    height: 50px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 35px;
 
+    border: 2px solid var(--third);
+    
 
 }
 
 .startbutton {
+    width: 250px;
+    height: 40px;
+    justify-content: center;
+    margin: auto 0px auto 950px;
+    padding: 29px 0px 0px 0px;
+    text-align: center;
+    font-size: 27px;
+    background-color: var(--seventh);
+    box-shadow: 0px 0px 40px 5px var(--sixth);
+    box-shadow: inset 0px 0px 40px 5px var(--first);
+    color: var(--tenth);
 
+
+    border: 2px solid var(--third);
+    
 
 }
 
 /* this section contains the timer which will be hidden on start screen and visible on game screen */
+.timerarea {
+    position: fixed;
+    margin-top: 0;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+
+    border: 2px solid var(--third);
+
+}
+
 .timer {
+    margin: auto auto 25px 750px;
+    width: 700px;
+    height: 125px;
+    padding-top: 20px;
+    align-items: center;
+    justify-content: center;
 
-
+    background-color: var(--seventh);
+    box-shadow: 0px 0px 40px 5px var(--sixth);
+    box-shadow: inset 0px 0px 40px 5px var(--first);
+    border: 2px solid var(--third);
+    color: var(--fifth);
+    font-size: 70px;
+    
 }
 
 /* this section contains the h1 and text areas for the questions themselves */
@@ -92,28 +217,101 @@
 }
 
 /* this section contains the 4 sepatate answer options for each question */
-.answerfield {
+.disappearingareahidden {
+    display: none;
+    height: 0px;
+    border: 1px solid var(--third);
+    
+}
+
+.startfieldhidden {
+    display:none;
+    height: 0px;
+
+}
+
+
+.answerfieldvisible {
+    display: flex;
+    flex: grid;
+    flex-wrap: wrap;
+    justify-content: space-around;
+
+    width: auto;
+    height: 415px;
+    border: 2px solid var(--third);
+    padding: 50px;
 
 
 }
 
-.answerfieldbutton1 {
+.answerbutton1 {
+    height: 100px;
+    width: 600px;
+    padding-top: 45px;
 
+
+    text-align: center;
+    font-size: 40px;
+    color: var(--fifth);
+    word-wrap: wrap;
+    background-color: var(--third);
+    box-shadow: inset 0px 0px 40px 5px var(--first);
+
+    border: 2px solid var(--sixth);
+    
+}
+
+.answerbutton2 {
+    height: 100px;
+    width: 600px;
+    padding-top: 45px;
+
+
+    text-align: center;
+    font-size: 40px;
+    color: var(--fifth);
+    word-wrap: wrap;
+    background-color: var(--third);
+    box-shadow: inset 0px 0px 40px 5px var(--first);
+
+    border: 2px solid var(--sixth);
+    
+}
+
+.answerbutton3 {
+    height: 100px;
+    width: 600px;
+    padding-top: 45px;
+
+
+    text-align: center;
+    font-size: 40px;
+    color: var(--fifth);
+    word-wrap: wrap;
+    background-color: var(--third);
+    box-shadow: inset 0px 0px 40px 5px var(--first);
+
+    border: 2px solid var(--sixth);
+    
 
 }
 
-.answerfieldbutton2 {
+.answerbutton4 {
+    height: 100px;
+    width: 600px;
+    padding-top: 45px;
 
 
-}
+    text-align: center;
+    font-size: 40px;
+    color: var(--fifth);
+    word-wrap: wrap;
+    background-color: var(--third);
+    box-shadow: inset 0px 0px 40px 5px var(--first);
 
-.answerfieldbutton3 {
-
-
-}
-
-.answerfieldbutton4 {
-
+    border: 2px solid var(--sixth);
+    
 
 }
 
