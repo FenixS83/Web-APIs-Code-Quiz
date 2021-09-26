@@ -2,9 +2,29 @@
 
 /* universal settings */
 * {
+    background-color: var(--tenth);
 
 
 }
+
+/* primarily used colors */
+:root {
+    --first: #2e3941;
+    --second: #986244;
+    --third: #1d4f74;
+    --fourth: #181612;
+    --fifth: #b88953;
+    --sixth: #111b71;
+    --seventh: #6b789a;
+    --eigth: #5e0e02;
+    --ninth: #35180d;
+    --tenth: #66676a;
+
+}
+
+
+
+
 
 /* Highscores button that will lead directly to Highscores screen, will be visible on start and game screens, will ge hidden on highscores screen*/
 .scoresbuttonarea {
