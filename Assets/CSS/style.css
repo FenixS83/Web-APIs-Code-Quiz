@@ -71,6 +71,7 @@ header {
 
 /* Welcome area with Pop culture quiz title and instruction message */
 .quizstart {
+    display: none;
     width: auto;
     height: 500px;
     float: center;
@@ -83,6 +84,7 @@ header {
 }
 
 .quizstart h1 {
+    display: none;
     margin: 0;
     float: center;
     font-size: 50px;
@@ -95,6 +97,7 @@ header {
 }
 
 .quizstart p {
+    display: none;
     margin: 0;
     float: center;
     font-size: 30px;
@@ -106,7 +109,7 @@ header {
 }
 
 .answerfieldhidden {
-    display: none;
+    /* display: none; */
     margin: 0;
     width: auto;
     height: 250px;
@@ -128,12 +131,13 @@ header {
     height: 160px;
     justify-content: center;
     align-items: center;
-
-
+    
+    
     border: 1px solid var(--third);
     
-
+    
 }
+
 
 #textareaname {
     background-color: var(--first);
@@ -202,16 +206,45 @@ header {
 
 /* this section contains the h1 and text areas for the questions themselves */
 .questionarea {
+    /* display: none; */
+    width: auto;
+    height: 300px;
+    float: center;
+    align-items: center;
+    justify-content: center;
+
+    border: 2px solid var(--third);
+    
+
 
 
 }
 
 .questionarea h1 {
+    /* display: none; */
+    height: 75px;
+    margin: 0;
+    float: center;
+    font-size: 50px;
+    text-align: center;
+
+    border: 2px solid var(--third);
+    
 
 
 }
 
 .questionarea p {
+    /* display: none; */
+    height: 225px;
+    margin: 0;
+    float: center;
+    font-size: 30px;
+    text-align: center;
+
+    border: 2px solid var(--third);
+    
+
 
 
 }
@@ -232,13 +265,14 @@ header {
 
 
 .answerfieldvisible {
+    /* display: none; */
     display: flex;
     flex: grid;
     flex-wrap: wrap;
     justify-content: space-around;
 
     width: auto;
-    height: 415px;
+    height: 263px;
     border: 2px solid var(--third);
     padding: 50px;
 
@@ -246,7 +280,8 @@ header {
 }
 
 .answerbutton1 {
-    height: 100px;
+    /* display: none; */
+    height: 75px;
     width: 600px;
     padding-top: 45px;
 
@@ -263,7 +298,8 @@ header {
 }
 
 .answerbutton2 {
-    height: 100px;
+    /* display: none; */
+    height: 75px;
     width: 600px;
     padding-top: 45px;
 
@@ -280,7 +316,8 @@ header {
 }
 
 .answerbutton3 {
-    height: 100px;
+    /* display: none; */
+    height: 75px;
     width: 600px;
     padding-top: 45px;
 
@@ -298,7 +335,8 @@ header {
 }
 
 .answerbutton4 {
-    height: 100px;
+    /* display: none; */
+    height: 75px;
     width: 600px;
     padding-top: 45px;
 
@@ -351,6 +389,22 @@ header {
 }
 
 .againbutton {
+    width: 250px;
+    height: 40px;
+    justify-content: center;
+    margin: auto 0px auto 950px;
+    padding: 29px 0px 0px 0px;
+    text-align: center;
+    font-size: 27px;
+    background-color: var(--seventh);
+    box-shadow: 0px 0px 40px 5px var(--sixth);
+    box-shadow: inset 0px 0px 40px 5px var(--first);
+    color: var(--tenth);
+
+
+    border: 2px solid var(--third);
+    
+
 
     
 }
