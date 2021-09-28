@@ -55,7 +55,6 @@ var questions = [
         answer: "Document Object Model"
     }
 ];
-
 // Declared variables
 var score = 0;
 var questionIndex = 0;
@@ -68,7 +67,7 @@ var questionsDiv = document.querySelector("#questionsDiv");
 var wrapper = document.querySelector("#wrapper");
 
 // Seconds left is 10 seconds per question:
-var secondsLeft = 100;
+var secondsLeft = 200;
 // Holds interval time
 var holdInterval = 0;
 // penalty time for incorrect answer is 10 seconds
@@ -131,8 +130,9 @@ function compare(event) {
             secondsLeft = secondsLeft - penalty;
             createDiv.textContent = "Wrong! The correct answer is:  " + questions[questionIndex].answer;
         }
-
+    
     }
+
     // Question Index determines number question user is on
     questionIndex++;
 
@@ -165,11 +165,11 @@ function allDone() {
 
 // Calculates time remaining and replaces it with score
 if (secondsLeft >= 0) {
-        var timeRemaining = secondsLeft;
-        var createP2 = document.createElement("p");
-        clearInterval(holdInterval);
-        createP.textContent = "Your final score is: " + timeRemaining;
-        questionsDiv.appendChild(createP2);
+    var timeRemaining = secondsLeft;
+    var createP2 = document.createElement("p");
+    clearInterval(holdInterval);
+    createP.textContent = "Your final score is: " + timeRemaining;
+    questionsDiv.appendChild(createP2);
     }
 
 // creates a label to enter user intials
@@ -191,6 +191,7 @@ questionsDiv.appendChild(createInput);
  createSubmit.textContent = "Submit";
  questionsDiv.appendChild(createSubmit);
 
+ 
  // Event listener to capture initials and local storage for initials and score
  createSubmit.addEventListener("click", function () {
      var initials = createInput.value;
