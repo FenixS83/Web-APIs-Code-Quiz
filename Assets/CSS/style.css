@@ -71,7 +71,6 @@ header {
 
 /* Welcome area with Pop culture quiz title and instruction message */
 .quizstart {
-    display: none;
     width: auto;
     height: 500px;
     float: center;
@@ -83,8 +82,7 @@ header {
 
 }
 
-.quizstart h1 {
-    display: none;
+.quizstart_h1 {
     margin: 0;
     float: center;
     font-size: 50px;
@@ -96,8 +94,7 @@ header {
 
 }
 
-.quizstart p {
-    display: none;
+.quizstart_p {
     margin: 0;
     float: center;
     font-size: 30px;
@@ -107,9 +104,8 @@ header {
     
 
 }
-
+/* 
 .answerfieldhidden {
-    /* display: none; */
     margin: 0;
     width: auto;
     height: 250px;
@@ -117,10 +113,10 @@ header {
     border: 2px solid var(--third);
     
 
-}
+} */
 
 /* This area contains the name or initial text area as well as the submit/start button */
-.disappearingareavisible {
+.disappearingarea {
     height: 160px;
     border: 1px solid var(--third);
     
@@ -140,8 +136,8 @@ header {
 
 
 #textareaname {
-    background-color: var(--first);
-    color: var(--fourth);
+    background-color: rgb(86, 86, 86);
+    color: var(--fifth);
     margin: 15px 0px 0px 550px;
     float: center;
     width: 450px;
@@ -167,7 +163,7 @@ header {
     background-color: var(--seventh);
     box-shadow: 0px 0px 40px 5px var(--sixth);
     box-shadow: inset 0px 0px 40px 5px var(--first);
-    color: var(--tenth);
+    color: var(--fifth);
 
 
     border: 2px solid var(--third);
@@ -206,7 +202,7 @@ header {
 
 /* this section contains the h1 and text areas for the questions themselves */
 .questionarea {
-    /* display: none; */
+    display: none;
     width: auto;
     height: 300px;
     float: center;
@@ -220,8 +216,7 @@ header {
 
 }
 
-.questionarea h1 {
-    /* display: none; */
+.questionarea_h1 {
     height: 75px;
     margin: 0;
     float: center;
@@ -234,8 +229,7 @@ header {
 
 }
 
-.questionarea p {
-    /* display: none; */
+.questionarea_p {
     height: 225px;
     margin: 0;
     float: center;
@@ -250,22 +244,22 @@ header {
 }
 
 /* this section contains the 4 sepatate answer options for each question */
-.disappearingareahidden {
+
+/* .disappearingareahidden {
     display: none;
     height: 0px;
     border: 1px solid var(--third);
     
-}
-
+} */
+/* 
 .startfieldhidden {
     display:none;
     height: 0px;
 
-}
+} */
 
 
-.answerfieldvisible {
-    /* display: none; */
+.answerfield {
     display: flex;
     flex: grid;
     flex-wrap: wrap;
@@ -280,7 +274,6 @@ header {
 }
 
 .answerbutton1 {
-    /* display: none; */
     height: 75px;
     width: 600px;
     padding-top: 45px;
@@ -298,7 +291,6 @@ header {
 }
 
 .answerbutton2 {
-    /* display: none; */
     height: 75px;
     width: 600px;
     padding-top: 45px;
@@ -316,7 +308,6 @@ header {
 }
 
 .answerbutton3 {
-    /* display: none; */
     height: 75px;
     width: 600px;
     padding-top: 45px;
@@ -335,7 +326,6 @@ header {
 }
 
 .answerbutton4 {
-    /* display: none; */
     height: 75px;
     width: 600px;
     padding-top: 45px;

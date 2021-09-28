@@ -2,11 +2,35 @@
 
 
 // Define Variables and arrays
+var time =question.length * 15;
+var timerId =(`.timer`);
+var currentQuestionIndex = 0;
+
+var startBtn = document.querySelector(`.startbutton`);
+var topicsElement = document.querySelector(`.questionarea_h1`);
+var questionsElement = document.querySelector(`.questionarea_p`);
+var timerElement = document.querySelector(`.timer`);
+var choice1 = document.querySelector(`.answerbutton1`);
+var choice2 = document.querySelector(`.answerbutton2`);
+var choice3 = document.querySelector(`.answerbutton3`);
+var choice4 = document.querySelector(`.answerbutton4`);
 
 
-
+document.querySelector(`#textareaname`).onsubmit = submitName(); {
+    var name = document.querySelector(`#textareaname`).value;
+    localStorage[`name`] = name;
+    console.log(localStorage);
+}
 
 // startquiz function
+function startQuiz() {
+    var startScreen = document.querySelector(`.quizstart`);
+    startScreen.setAttribute(`class`, `hide `);
+
+    var gameScreen = document.querySelector(`.questionarea`);
+    gameScreen.removeAttribute('class')
+
+}
 
     // submit function first
 
@@ -88,9 +112,10 @@
 //addeventlistener list
 
     // start quiz
-
+    startBtn.addEventListener(`click`, submitName);
+    startBtn.addEventListener(`click`, startQuiz);
     // play again
-
+    againBtn.addEventListener(`click`, startQuiz);
     // high scores button
 
     // answer 1
