@@ -1,410 +1,104 @@
-/* Stylesheet for pop_culture_quiz */
-
-/* primarily used colors */
-:root {
-    --first: #549dd0;
-    --second: #986244;
-    --third: #1d4f74;
-    --fourth: #181612;
-    --fifth: #e3b581;
-    --sixth: #111b71;
-    --seventh: #6b789a;
-    --eigth: #5e0e02;
-    --ninth: #4b2313;
-    --tenth: #8a8d93;
-
-}
-
-/* universal settings */
-* {
-    background-color: var(--tenth);
-    color: var(--fourth);
-    font-family: "Calibri", "Cambria", "Consolas", "Tahoma", "Arial", sans-serif;
-    text-decoration: none;
-    
-
-}
-
-
-
-
-
-/* Highscores button that will lead directly to Highscores screen, will be visible on start and game screens, will ge hidden on highscores screen*/
 header {
-
-
+    float:left;
 }
-
-.scoresbuttonarea {
-    float: left;
-    width: 300px;
-    height: 663px;
-    border: 3px solid black;
-
-
-
-}
-
-.scoresbutton {
-    width: 250px;
-    height: 80px;
-    margin: 20px auto;
-    padding: 29px 0px 0px 0px;
-    text-align: center;
-    font-size: 27px;
-    color: var(--fifth);
-    word-wrap: wrap;
-    background-color: var(--seventh);
-    box-shadow: 0px 0px 40px 5px var(--sixth);
-    box-shadow: inset 0px 0px 40px 5px var(--first);
-
-    border: 2px solid var(--third);
-    
-    justify-content: center;
-
-}
-
-.scoresbutton a {
-    background-color: transparent;
-    color: var(--fifth);
-}
-
-/* Welcome area with Pop culture quiz title and instruction message */
-.quizstart {
-    width: auto;
+#wrapper {
+    position: absolute;
+    left: 30%;
+    top: 20%;
+    width: 500px;
     height: 500px;
-    float: center;
-    align-items: center;
-    justify-content: center;
-
-    border: 2px solid var(--third);
-    
-
+    border: 1px solid crimson;
+    box-shadow: darkgrey;
 }
 
-.quizstart_h1 {
-    margin: 0;
-    float: center;
-    font-size: 50px;
+#startTime {
+    background-color: crimson;
+    margin-left: 33%;
+    padding: 15px 32px;
+    font-size: 20px;
+    color: white;
+    box-shadow: darkgrey;
+}
+#questionsDiv {
     text-align: center;
-
-    border: 2px solid var(--third);
-    
-
-
+    font-weight: bolder;
+    margin: 30px;
+    margin-top: 30px;
 }
 
-.quizstart_p {
-    margin: 0;
-    float: center;
-    font-size: 30px;
-    text-align: center;
-
-    border: 2px solid var(--third);
-    
-
+#currentTime {
+    float: right;
 }
-/* 
-.answerfieldhidden {
-    margin: 0;
+
+#goBack {
+    background-color: crimson;
+    position: relative;
+    padding: 10px;
+    font-size: 20px;
+    color: white;
+    top: 30%;
+    left: 55%;
     width: auto;
-    height: 250px;
-    background-color: green;
-    border: 2px solid var(--third);
-    
-
-} */
-
-/* This area contains the name or initial text area as well as the submit/start button */
-.disappearingarea {
-    height: 160px;
-    border: 1px solid var(--third);
-    
-}
-
-.startfield {
-    width: auto;
-    height: 160px;
-    justify-content: center;
-    align-items: center;
-    
-    
-    border: 1px solid var(--third);
-    
-    
-}
-
-
-#textareaname {
-    background-color: rgb(86, 86, 86);
-    color: var(--fifth);
-    margin: 15px 0px 0px 550px;
-    float: center;
-    width: 450px;
-    height: 50px;
-    justify-content: center;
-    align-items: center;
     text-align: center;
-    font-size: 35px;
-
-    border: 2px solid var(--third);
-    
-
+    text-decoration: none;
+    box-shadow: darkgrey;
 }
 
-.startbutton {
-    width: 250px;
-    height: 40px;
-    justify-content: center;
-    margin: auto 0px auto 950px;
-    padding: 29px 0px 0px 0px;
+#clear {
+    background-color: crimson;
+    position: relative;
+    padding: 10px;
+    font-size: 20px;
+    color: white;
+    top: 30%;
+    right: 5%;
     text-align: center;
-    font-size: 27px;
-    background-color: var(--seventh);
-    box-shadow: 0px 0px 40px 5px var(--sixth);
-    box-shadow: inset 0px 0px 40px 5px var(--first);
-    color: var(--fifth);
-
-
-    border: 2px solid var(--third);
-    
-
+    box-shadow: darkgrey;
 }
 
-/* this section contains the timer which will be hidden on start screen and visible on game screen */
-.timerarea {
-    position: fixed;
-    margin-top: 0;
-    bottom: 0;
-    width: 100%;
+button {
+    border-radius: 8px;
+}
+
+textarea {
+    width: 90%;
+    margin: 20px;
+}
+
+#Submit {
+    background-color: crimson;
+    margin-left: 33%;
+    padding: 15px 32px;
+    font-size: 20px;
+    color: white;
+}
+
+label {
+    margin-right: 10px;
+}
+input {
+    margin-bottom: 20px;
+    width: 50%;
+    border: 1px solid lightgray;
+}
+
+h1 {
     text-align: center;
-
-    border: 2px solid var(--third);
-
 }
 
-.timer {
-    margin: auto auto 25px 750px;
-    width: 700px;
-    height: 125px;
-    padding-top: 20px;
-    align-items: center;
-    justify-content: center;
-
-    background-color: var(--seventh);
-    box-shadow: 0px 0px 40px 5px var(--sixth);
-    box-shadow: inset 0px 0px 40px 5px var(--first);
-    border: 2px solid var(--third);
-    color: var(--fifth);
-    font-size: 70px;
-    
-}
-
-/* this section contains the h1 and text areas for the questions themselves */
-.questionarea {
-    display: none;
-    width: auto;
-    height: 300px;
-    float: center;
-    align-items: center;
-    justify-content: center;
-
-    border: 2px solid var(--third);
-    
-
-
-
-}
-
-.questionarea_h1 {
-    height: 75px;
-    margin: 0;
-    float: center;
-    font-size: 50px;
-    text-align: center;
-
-    border: 2px solid var(--third);
-    
-
-
-}
-
-.questionarea_p {
-    height: 225px;
-    margin: 0;
-    float: center;
-    font-size: 30px;
-    text-align: center;
-
-    border: 2px solid var(--third);
-    
-
-
-
-}
-
-/* this section contains the 4 sepatate answer options for each question */
-
-/* .disappearingareahidden {
-    display: none;
-    height: 0px;
-    border: 1px solid var(--third);
-    
-} */
-/* 
-.startfieldhidden {
-    display:none;
-    height: 0px;
-
-} */
-
-
-.answerfield {
-    display: flex;
-    flex: grid;
-    flex-wrap: wrap;
-    justify-content: space-around;
-
-    width: auto;
-    height: 263px;
-    border: 2px solid var(--third);
-    padding: 50px;
-
-
-}
-
-.answerbutton1 {
-    height: 75px;
-    width: 600px;
-    padding-top: 45px;
-
-
-    text-align: center;
-    font-size: 40px;
-    color: var(--fifth);
-    word-wrap: wrap;
-    background-color: var(--third);
-    box-shadow: inset 0px 0px 40px 5px var(--first);
-
-    border: 2px solid var(--sixth);
-    
-}
-
-.answerbutton2 {
-    height: 75px;
-    width: 600px;
-    padding-top: 45px;
-
-
-    text-align: center;
-    font-size: 40px;
-    color: var(--fifth);
-    word-wrap: wrap;
-    background-color: var(--third);
-    box-shadow: inset 0px 0px 40px 5px var(--first);
-
-    border: 2px solid var(--sixth);
-    
-}
-
-.answerbutton3 {
-    height: 75px;
-    width: 600px;
-    padding-top: 45px;
-
-
-    text-align: center;
-    font-size: 40px;
-    color: var(--fifth);
-    word-wrap: wrap;
-    background-color: var(--third);
-    box-shadow: inset 0px 0px 40px 5px var(--first);
-
-    border: 2px solid var(--sixth);
-    
-
-}
-
-.answerbutton4 {
-    height: 75px;
-    width: 600px;
-    padding-top: 45px;
-
-
-    text-align: center;
-    font-size: 40px;
-    color: var(--fifth);
-    word-wrap: wrap;
-    background-color: var(--third);
-    box-shadow: inset 0px 0px 40px 5px var(--first);
-
-    border: 2px solid var(--sixth);
-    
-
-}
-
-/* This section contains the styling for the highscores.html screen  */
-
-/* This section contains the styling for the highscores title specifically*/
-.quizend {
-
-
-}
-
-.quizend h1 {
-
-
-}
-
-/* this section contains the styling for the highscores list */
-.topscoresarea {
-
-
-}
-
-.scoreslist {
-
-
-}
-
-/* this section contains the styling for the footer area on the highscores list, contains thank you message and play again button */
-.thanks {
-
-
-}
-
-.thanks h2 {
-
-
-}
-
-.againbutton {
-    width: 250px;
-    height: 40px;
-    justify-content: center;
-    margin: auto 0px auto 950px;
-    padding: 29px 0px 0px 0px;
-    text-align: center;
-    font-size: 27px;
-    background-color: var(--seventh);
-    box-shadow: 0px 0px 40px 5px var(--sixth);
-    box-shadow: inset 0px 0px 40px 5px var(--first);
-    color: var(--tenth);
-
-
-    border: 2px solid var(--third);
-    
-
-
-    
+li {
+    background-color:crimson;
+    margin-top: 10px;
+    padding: 5px 15px;
+    width: 80%;
+    font-size: 18px;
+    color: white;
 }
 
 
-
-
-
-
-
-
-
+#createDiv {
+    margin-top: 20px;
+    border-top: 1px solid lightgray;
+    font-weight: bolder;
+}
 
