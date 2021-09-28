@@ -18,7 +18,7 @@
 /* universal settings */
 * {
     background-color: var(--tenth);
-    color: var(--fourth);
+    color: var(--third);
     font-family: "Calibri", "Cambria", "Consolas", "Tahoma", "Arial", sans-serif;
     text-decoration: none;
     
@@ -52,13 +52,13 @@ header {
     padding: 29px 0px 0px 0px;
     text-align: center;
     font-size: 27px;
-    color: var(--fifth);
+    color: var(--fourth);
     word-wrap: wrap;
     background-color: var(--seventh);
     box-shadow: 0px 0px 40px 5px var(--sixth);
     box-shadow: inset 0px 0px 40px 5px var(--first);
 
-    border: 2px solid var(--third);
+    border: 2px solid var(--fourth);
     
     justify-content: center;
 
@@ -66,7 +66,7 @@ header {
 
 .scoresbutton a {
     background-color: transparent;
-    color: var(--fifth);
+    color: var(--fourth);
 }
 
 /* Welcome area with Pop culture quiz title and instruction message */
@@ -77,7 +77,7 @@ header {
     align-items: center;
     justify-content: center;
 
-    border: 2px solid var(--third);
+    border: 2px solid var(--fourth);
     
 
 }
@@ -88,7 +88,7 @@ header {
     font-size: 50px;
     text-align: center;
 
-    border: 2px solid var(--third);
+    border: 2px solid var(--fourth);
     
 
 
@@ -100,7 +100,7 @@ header {
     font-size: 30px;
     text-align: center;
 
-    border: 2px solid var(--third);
+    border: 2px solid var(--fourth);
     
 
 }
@@ -110,7 +110,7 @@ header {
     width: auto;
     height: 250px;
     background-color: green;
-    border: 2px solid var(--third);
+    border: 2px solid var(--fourth);
     
 
 } */
@@ -118,7 +118,7 @@ header {
 /* This area contains the name or initial text area as well as the submit/start button */
 .disappearingarea {
     height: 160px;
-    border: 1px solid var(--third);
+    border: 1px solid var(--fourth);
     
 }
 
@@ -129,7 +129,7 @@ header {
     align-items: center;
     
     
-    border: 1px solid var(--third);
+    border: 1px solid var(--fourth);
     
     
 }
@@ -137,7 +137,7 @@ header {
 
 #textareaname {
     background-color: rgb(86, 86, 86);
-    color: var(--fifth);
+    color: var(--fourth);
     margin: 15px 0px 0px 550px;
     float: center;
     width: 450px;
@@ -147,7 +147,7 @@ header {
     text-align: center;
     font-size: 35px;
 
-    border: 2px solid var(--third);
+    border: 2px solid var(--fourth);
     
 
 }
@@ -163,10 +163,10 @@ header {
     background-color: var(--seventh);
     box-shadow: 0px 0px 40px 5px var(--sixth);
     box-shadow: inset 0px 0px 40px 5px var(--first);
-    color: var(--fifth);
+    color: var(--fourth);
 
 
-    border: 2px solid var(--third);
+    border: 2px solid var(--fourth);
     
 
 }
@@ -179,7 +179,7 @@ header {
     width: 100%;
     text-align: center;
 
-    border: 2px solid var(--third);
+    border: 2px solid var(--fourth);
 
 }
 
@@ -194,8 +194,8 @@ header {
     background-color: var(--seventh);
     box-shadow: 0px 0px 40px 5px var(--sixth);
     box-shadow: inset 0px 0px 40px 5px var(--first);
-    border: 2px solid var(--third);
-    color: var(--fifth);
+    border: 2px solid var(--fourth);
+    color: var(--fourth);
     font-size: 70px;
     
 }
@@ -209,7 +209,7 @@ header {
     align-items: center;
     justify-content: center;
 
-    border: 2px solid var(--third);
+    border: 2px solid var(--fourth);
     
 
 
@@ -223,7 +223,7 @@ header {
     font-size: 50px;
     text-align: center;
 
-    border: 2px solid var(--third);
+    border: 2px solid var(--fourth);
     
 
 
@@ -236,7 +236,7 @@ header {
     font-size: 30px;
     text-align: center;
 
-    border: 2px solid var(--third);
+    border: 2px solid var(--fourth);
     
 
 
@@ -248,7 +248,7 @@ header {
 /* .disappearingareahidden {
     display: none;
     height: 0px;
-    border: 1px solid var(--third);
+    border: 1px solid var(--fourth);
     
 } */
 /* 
@@ -267,7 +267,7 @@ header {
 
     width: auto;
     height: 263px;
-    border: 2px solid var(--third);
+    border: 2px solid var(--fourth);
     padding: 50px;
 
 
@@ -281,9 +281,9 @@ header {
 
     text-align: center;
     font-size: 40px;
-    color: var(--fifth);
+    color: var(--fourth);
     word-wrap: wrap;
-    background-color: var(--third);
+    background-color: var(--fourth);
     box-shadow: inset 0px 0px 40px 5px var(--first);
 
     border: 2px solid var(--sixth);
@@ -298,9 +298,9 @@ header {
 
     text-align: center;
     font-size: 40px;
-    color: var(--fifth);
+    color: var(--fourth);
     word-wrap: wrap;
-    background-color: var(--third);
+    background-color: var(--fourth);
     box-shadow: inset 0px 0px 40px 5px var(--first);
 
     border: 2px solid var(--sixth);
@@ -315,9 +315,9 @@ header {
 
     text-align: center;
     font-size: 40px;
-    color: var(--fifth);
+    color: var(--fourth);
     word-wrap: wrap;
-    background-color: var(--third);
+    background-color: var(--fourth);
     box-shadow: inset 0px 0px 40px 5px var(--first);
 
     border: 2px solid var(--sixth);
@@ -333,9 +333,9 @@ header {
 
     text-align: center;
     font-size: 40px;
-    color: var(--fifth);
+    color: var(--fourth);
     word-wrap: wrap;
-    background-color: var(--third);
+    background-color: var(--fourth);
     box-shadow: inset 0px 0px 40px 5px var(--first);
 
     border: 2px solid var(--sixth);
@@ -392,7 +392,7 @@ header {
     color: var(--tenth);
 
 
-    border: 2px solid var(--third);
+    border: 2px solid var(--fourth);
     
 
 
