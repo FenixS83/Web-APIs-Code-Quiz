@@ -65,8 +65,8 @@ var timer = document.querySelector("#startTime");
 var questionsDiv = document.querySelector("#questionsDiv");
 var wrapper = document.querySelector("#wrapper");
 
-// Seconds left is 15 seconds per question:
-var secondsLeft = 150;
+// Seconds left is 10 seconds per question:
+var secondsLeft = 100;
 // Holds interval time
 var holdInterval = 0;
 // penalty time for incorrect answer is 10 seconds
